@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Hanalei+Fill|Kalam|Monoton');
+/*
+font-family: 'Cinzel', serif; body
+font-family: 'Kalam', cursive;  subtitle
+font-family: 'Monoton', cursive;
+font-family: 'Hanalei Fill', cursive;
+*/
+
+.page-wrapper {
+	display: grid;
+	grid-template-columns: 83% 17% ;
+	text-align: justify-all;
+	text-indent: 25px;
+}
+body {
+	background-color: lightgray;
+	background-image: url("https://images.freeimages.com/images/large-previews/114/free-background-light-rainbow-1639351.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+
+
+	font-family: 'Kalam', cursive;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+#zen-intro{
+	margin: 20px 10px ; /* TopDown RightLeft */
+	grid-area: 1 / 1 / 2 / 2 ; /* R-start / C-start / R-end / C-end; */
+	align-content: flex-start;
+}
+/*#zen-intro header {
+	position: relative;
+	animation-name: test;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}*/
+.sidebar{
+	text-indent: 0px;
+	margin: 20px 3px 0px; /* Top RightLeft Down */
+	grid-area: 1 / 2 / 3 / 3 ;
+}
+#zen-summary{
+	text-align: center;
+
+}
+#zen-supporting {
+	margin: 0px 10px 10px ;
+	grid-area: 2 / 1 / 2 / 2 ; /* Rs / Cs / Re / Ce; */
+	display: grid;
+	grid-template-areas: 'A B' 'C C' 'D D';
+	grid-column-gap: 10px;
+	
+}
+.explanation{
+	grid-area: A;
+}
+.participation{
+	grid-area: B;
+}
+.benefits{
+	grid-area: C;
+}
+.requirements{
+	grid-area: D;
+}
+header > h1 {
+	/*font-family: 'Hanalei Fill', cursive;*/
+	font-family: 'Cinzel', serif; 
+	font-size: 3em;
+	text-align: center;
+	border: 5px solid black;
+	background-color: gray;
+	animation-name: glowText;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+header > h2 {
+	font-size: 1.5em;
+	position: relative;
+	animation-name: moving;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+h3{
+	font-family: 'Kalam', cursive;
+}
+
+@keyframes glowText {
+	from {
+    	text-shadow: 0px 0px 0px white;
+    }
+	to {
+    	text-shadow: 0px 0px 30px red;
+    }
+}
+
+@keyframes moving {
+	from {
+    margin-left: 0%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 70%;
+    width: 50%;
+  }
+}
+
