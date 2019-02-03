@@ -13,21 +13,27 @@ font-family: 'Hanalei Fill', cursive;
 	text-indent: 25px;
 }
 body { 
-	background-color: lightgray;
-	background-image: url("https://images.freeimages.com/images/large-previews/114/free-background-light-rainbow-1639351.jpg");
+	/*background-image: url("https://images.freeimages.com/images/large-previews/114/free-background-light-rainbow-1639351.jpg");*/
+	background-image: url("https://wallpaper.campus-star.com/app/uploads/2016/08/wall-pink09.jpg");	
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: inherit;
 	background-attachment: fixed;
 
 
 	font-family: 'Kalam', cursive;
-	font-size: 1.2em;
+	font-size: 1.1em;
+	color: black;
 	text-decoration: none;
 }
 #zen-intro{
 	margin: 20px 10px ; /* TopDown RightLeft */
 	grid-area: 1 / 1 / 2 / 2 ; /* R-start / C-start / R-end / C-end; */
 	align-content: flex-start;
+	background-image: url("https://vignette.wikia.nocookie.net/adventuretimeultra/images/e/e9/Pastel_Dots_Wallpaper.png/revision/latest?cb=20131129215804");
+	background-repeat: no-repeat;
+	background-position: all;
+	background-size: 100%;
+
 }
 /*#zen-intro header {
 	position: relative;
@@ -49,29 +55,66 @@ body {
 	margin: 0px 10px 10px ;
 	grid-area: 2 / 1 / 2 / 2 ; /* Rs / Cs / Re / Ce; */
 	display: grid;
-	grid-template-areas: 'A B' 'C C' 'D D';
-	grid-column-gap: 10px;
-	
+	grid-template-areas: 'A B' 'C C' 'D D' 'E F';
+} 
+.explanation{     
+	grid-area: A; 
+} 
+.participation{     
+	grid-area: B; }
+.benefits{     
+	grid-area: C; } 
+.requirements{     
+	grid-area: D; } 
+a {
+	color: black;}
+
+.wrapper a {
+	color: #c8c8c8;
 }
-.explanation{
-	grid-area: A;
+.wrapper li {
+	/*background-color: #272b30;*/
+    background-image: linear-gradient(#484e55, #3a3f44 60%, #313539);
+	border: 3px ridge #7A7A7A;
+	margin: 0px 0px;
 }
-.participation{
-	grid-area: B;
+.wrapper h3 {
+	background-color: #F75B49;
+	border: 3px ridge #7A7A7A;
+	margin-top: 0px;
 }
-.benefits{
-	grid-area: C;
+.wrapper div {
+	background-image: linear-gradient(black , gray 40%, lightgray);
+	margin: 5px 0px;
+	/*background-color: #242323;*/
+	border: 3px ridge #7A7A7A;
 }
-.requirements{
-	grid-area: D;
+#zen-supporting div {
+	border: 5px double black;
+	border-radius: 10px;
+	margin: 5px 5px;
 }
-header > h1 {
-	/*font-family: 'Hanalei Fill', cursive;*/
-	font-family: 'Cinzel', serif; 
-	font-size: 3em;
+#zen-supporting footer {
 	text-align: center;
-	border: 5px solid black;
-	background-color: lightgray;
+}
+/*,.explanation*/
+.requirements {
+	background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/05/16/72/1159b61bef7863d.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 125%;
+	background-position: top;
+}
+header > h1{     
+	/*font-family: 'Hanalei Fill', cursive;*/
+	margin-top: 0px;
+	font-family: 'Cinzel',serif;      
+	font-size: 4.7em;     
+	text-align: center;     
+	border: 5px ridge gray;     
+	/*background-color: #f7f2f2;*/     
+	background-color: #FBBB9F;
+	background-image: url("https://i687.photobucket.com/albums/vv237/4-one/4-1/HT/Bllng_12.png");
 
 	animation-name: glowText;
 	animation-duration: 1s;
