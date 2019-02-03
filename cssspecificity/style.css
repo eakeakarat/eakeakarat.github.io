@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Sriracha');
+
+.description {
+	text-align: center;
+}
+h1{
+	font-size: 2.5em;
+}
+body {  
+	background: linear-gradient(to right, #3494e6, #ec6ead);
+	text-align: center;
+	font-family: 'Sriracha', cursive;
+	font-size: 1.2em;
+	color: #222222;
+}
+.content {
+	display: flex;
+	border: 5px double #434343;
+	border-radius: 10px;
+}
+.tag{
+    flex-grow: 1;
+    order: 1;
+}
+.class{	
+    flex-grow: 1;
+    order: 3;
+}
+.id{	
+    flex-grow: 1;
+    order: 5;
+}
+.more1 {
+	order: 2;
+}
+.more2 {
+	order: 4;
+}
+
+.expanded {
+	border: 5px double #434343;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+#first {
+	order: 1;
+}
+#second {
+	order: 5;
+}
+#third {
+
+}
+.footer {
+
+}

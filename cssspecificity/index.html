@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Specificity</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1> CSS Specificity</h1>
+	<div class="description">
+    	<div> CSS Specificity คือการจัดเรียงลำดับความสำคัญในการใช้ style ที่กำหนดในไฟล์ css <br>
+    	ในการแสดงผลในหน้าเว็บไซต์เพื่อการลดทับซ้อนของ style โดยทำให้กำหนดรูปแบบ style ได้ง่ายไม่เกิดการซ้อนทับเมื่อเขียนไว้หลัง style ก่อนหน้า </div>
+	</div>
+
+	<p> ลำดับความสำคัญแตกต่างกันตามความละเอียดในการเจาะจงเข้าถึง element นั้นๆจะสามรถเรียงลำดับความสำคัญจากมากไปน้อยได้ดังนี้ </p>
+    <div class="content">
+        <div class="tag"> 
+        	<p>HTML TAG</p>	        
+        </div>
+
+        <div class="class">
+        	<p>CLASS</p>
+        </div>
+        <div class="id">
+        	<p>ID</p>
+		</div>
+
+		<div class="more1"> <p> > </p> </div>
+		<div class="more2"> <p> > </p> </div>
+    </div>
+	<p>การระบุ element ที่ละเอียดมากขึ้นจะทำให้ลำดับความสำคัญเพิ่มขึ้นอีกด้วย เช่น </p>
+	<div class="expanded">
+		<div id="first"> div a</div>
+		<div id="second">.intro h2.first</div>
+		<div id="third">#summary div p</div>
+		
+	</div><br>
+	<div class="footer">ยิ่งระบุการเข้าถึงละเอียดก็จะทำให้มีความสำคัญมากขึ้นและทำให้ไม่เกิดการทับซ้อนของ style</div>
+</body>
+<!-- 
+
+<div class="header">
+    <p>Header</p>
+</div>
+<div class="flex-container">
+    <div class="content">
+        <p>Main Content</p>
+    </div>
+    <div class="sidebar primary">
+        <p>Primary Sidebar</p>
+    </div>
+    <div class="sidebar secondary">
+        <p>Secondary Sidebar</p>
+    </div>
+</div>
+<div class="footer">
+    <p>Footer</p>
+</div> -->
+
+
+</html>
