@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anime2016</title>
+    <link rel="stylesheet" href="/bulma-0.7.2/css/bulma.min.css">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <section class="hero is-dark is-bold" style="height:30%">
+      <h1 class="title is-size-1 has-text-centered" style="margin: 10px 10px; height:30%">Anime in 2016</h1> 
+
+      <div class="container has-text-centered" style="margin-bottom: 10px;">
+        <input id="input" class="content is-rounded" type="text" placeholder="Search" style="height: 30px; width: 200px ; border-radius: 20px; text-align: center">
+        <button id="search-btn" class="button is-rounded is-info is-dark has-text-centered" style="height: 30px;width: 150px">
+          Search
+        </button>
+        <br>
+        <button id="filter-btn" class="button is-rounded is-warning has-text-centered" style="height: 30px;width: 150px"> 
+          Filter
+        </button>
+        <button id="advanced-btn" class="button is-rounded is-warning has-text-centered" style="height: 30px;width: 150px"> 
+          Advanced search
+        </button>
+      </div>
+
+      <div id="filter" class="box container" style="display:none ; margin: 10px auto; background-color: #ffe479;">
+        <input class="has-text-centered" id="name" type="checkbox" style="margin: 5px 10px 5px 20px;">Name 
+        <input class="has-text-centered" id="studio" type="checkbox"  style="margin: 5px 10px 5px 20px;" >Studio 
+        <input class="has-text-centered" id="genres" type="checkbox"  style="margin: 5px 10px 5px 20px;" >Genres 
+        <input class="has-text-centered" id="hype" type="checkbox"  style="margin: 5px 10px 5px 20px;" >Hype 
+        <input class="has-text-centered" id="startDate" type="checkbox"  style="margin: 5px 10px 5px 20px;" >StartDate 
+      </div>
+
+      <div id="adv-search" class="box level container" style="display:none; margin: 10px auto; background-color: #ffe479;">
+        Name : <input id="adv-name" class="is-medium" type="text" >
+        Studio : <input id="adv-studio"class="is-medium"  type="text" >
+        Genres : <input id="adv-genres" class="is-medium" type="text" >
+        Hype : <input id="adv-hype" class="is-medium" type="text" >
+        Start Date : <input id="adv-startDate" class="is-medium" type="text" >
+      </div>
+
+      <section class="container is-medium">
+        <table id="table" class="table is-bordered is-striped is-hoverable is-fullwidth">
+          <tr style="text-align: center ; background-color:rgb(49, 190, 255)">
+            <th class="name" style="text-align:center;">Name</th>
+            <th class="studio" style="text-align:center;">Studio</th>
+            <th class="genres"style="text-align:center;width:35%">Genres</th>
+            <th class="hype" style="text-align:center;" >Hype</th>
+            <th class="startDate" style="text-align:center;width:120px;">StartDate</th>
+          </tr>
+        </table>
+      </section>
+
+    <footer class="footer" style="color:black ; margin-top:50px;">
+      Reference : <a href="https://myanimelist.net/anime/season/2016/spring">myanimelist.net</a>
+    </footer>
+
+  </section>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
