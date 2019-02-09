@@ -455,12 +455,10 @@ $(document).ready(function() {
       var genres = row.insertCell(2);
       var hype = row.insertCell(3)
       var date = row.insertCell(4);
-      // var link = row.insertCell(5);
       name.innerHTML = input.title.text;
       studio.innerHTML = input.studio;
       genres.innerHTML = input.genres;
       hype.innerHTML = input.hype;
       date.innerHTML = input.start_date;
-      // link.innerHTML = input.title.link;
   };
 });
